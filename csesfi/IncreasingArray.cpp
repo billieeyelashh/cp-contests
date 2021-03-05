@@ -37,4 +37,7 @@ int main() {
 }
 
 
+//Explanation of Segment Trees for my later self if I forget what it is 
 
+
+	
