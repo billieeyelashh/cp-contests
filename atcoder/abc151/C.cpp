@@ -9,21 +9,11 @@ typedef pair<int, int> pii;
 typedef vector<int> vi;
 
 
-
-
-
-
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
-		
-    // Basically I need to calculate how many Permutations for n there are 
-    
-    int n , permutationCounter = 0;
 
-    
-
-
-
+    // n -1 = other members the ith member has a height of ai millimeters
+    int n;
 
 }

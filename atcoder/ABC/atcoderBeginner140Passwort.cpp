@@ -9,7 +9,7 @@ typedef pair<int, int> pii;
 typedef vector<int> vi;
 
 
-
+// A passwort 
 
 
 
@@ -17,10 +17,18 @@ int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 		
-    // Basically I need to calculate how many Permutations for n there are 
-    
-    int n , permutationCounter = 0;
+    //Addtion and Substraction
+    // 3 Stellen
 
+    int n;
+    cin >> n;
+
+    cout << n*n*n
+
+
+    
+
+    
     
 
 

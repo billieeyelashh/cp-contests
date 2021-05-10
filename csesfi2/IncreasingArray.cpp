@@ -8,21 +8,9 @@ typedef long long ll;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 
+// Addition and subStractoin
 
-
-
-
-
-int main() {
-	cin.tie(0)->sync_with_stdio(0);
-	cin.exceptions(cin.failbit);
-		
-    // Basically I need to calculate how many Permutations for n there are 
-    
-    int n , permutationCounter = 0;
-
-    
-
+int main(){
 
 
 

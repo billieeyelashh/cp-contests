@@ -8,20 +8,24 @@ typedef long long ll;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 
-
-
-
-
+//Count abc find the substrings 
 
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 		
-    // Basically I need to calculate how many Permutations for n there are 
-    
-    int n , permutationCounter = 0;
+    string s;
+    int n;
 
-    
+    cin >> n >> s;
+    int ans = 0;
+
+    for(int i; i<= n-3; i++){
+        if(s[i]== 'A' && s[i + 1] == 'B' && s[i+2] == 'C'){
+            ans++;
+        }
+    }
+    cout << ans;
 
 
 
