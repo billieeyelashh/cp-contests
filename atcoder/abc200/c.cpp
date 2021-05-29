@@ -8,13 +8,21 @@ typedef long long ll;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 
-
+// Made up 
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 
-    char s;
-    cin >> s;
-    s++;
-    cout << s;
+    int n;
+    vector<int> A(n);
+
+    cin >> n;
+
+    for(auto& x : A){
+        cin >>x;
+        cout << x;
+    }
+
+
+    
 }

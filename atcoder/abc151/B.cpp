@@ -8,12 +8,28 @@ typedef long long ll;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 
+// Achieve the Goal
 
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 
-    // n -1 = other members the ith member has a height of ai millimeters
-    int n;
+    int n,k,m;
+    cin >> n >> k >> m;
+
+    int sum =0 ;
+
+    for(int i=1; i < n ; i++){
+        int cur;
+        cin >> cur;
+        sum += cur;
+    }
+
+    if(sum + k >= n * m){
+        cout << max(0, n*m-sum) << endl;
+
+    }else{
+        cout << -1 << endl;
+    }
 
 }

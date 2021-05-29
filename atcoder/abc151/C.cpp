@@ -13,7 +13,22 @@ int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 
-    // n -1 = other members the ith member has a height of ai millimeters
+    // Welcome to atcoder
     int n;
+    string s;
+
+    cin << n << s;
+    
+    for(int i; i <n; ++i;){
+        int a[i];
+
+        for(i : a){
+            ++i;
+        }
+
+
+    }
+
+
 
 }

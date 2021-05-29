@@ -8,13 +8,27 @@ typedef long long ll;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 
-
+// Made up 
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 
-    char s;
-    cin >> s;
-    s++;
-    cout << s;
+    int n;
+    cin >> n;
+
+    if(n<= 0){
+        cout << "0";
+    }
+    else if(n<=100){
+        cout << "1";
+    }
+    else if(n % 100 == 0 ){
+        cout << n/100;
+    }
+    else{
+        cout << n/100 +1;
+    }
+
+	
+    
 }
