@@ -12,28 +12,22 @@ int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 
-    int n; cin >> n;
+    int n;
+    cin >> n;
 
     vector<int> A(n);
-    vector<int> B(n);
 
-    for(int i=0; i <n; ++i){
-        cin >> A[i];
+    for(auto& x : A){
+        cin >> x;
     }
 
-    // Count up to n an check if the numbers are in the list
-    for(int i =1; i<=n; ++i){
-        B[i] == i;
+    sort(A.begin(), A.end());
+
+    for (int i =0; i <n; ++i){
+        if(A[i] != i +1){
+            cout << "No";
+        }
+        
+    
+    cout << "Yes";
     }
-    bool is_permutation = false;
-    // Check if vector b and a have the same numbers
-
-    /* if A is permutation of B;
-        cout << "YES";
-       else
-        cout << "NO"
-
-    */
-
-
-}
