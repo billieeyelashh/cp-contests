@@ -12,22 +12,25 @@ int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 
-    int n;
-    cin >> n;
+    int a,b,c; cin >> a >> b >> c;
 
-    if(n<= 0){
-        cout << "0";
+    if (abs(pow(a,c)) > abs(pow(b,c))){
+        cout << ">";
     }
-    else if(n<=100){
-        cout << "1";
+    else if(abs(pow(a,c)) < abs(pow(b,c))){
+        cout << "<";
     }
-    else if(n % 100 == 0 ){
-        cout << n/100;
+    else if(abs(pow(a,c))== abs(pow(b,c))){
+        cout << "=";
     }
-    else{
-        cout << n/100 +1;
+   
+   /* else{
+        cout << "=";
     }
+*/
 
-	
-    
+
+
+
+
 }

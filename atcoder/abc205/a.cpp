@@ -12,22 +12,20 @@ int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 
-    int n;
-    cin >> n;
+    float a,b;
+    float ans = 0;
 
-    if(n<= 0){
-        cout << "0";
-    }
-    else if(n<=100){
-        cout << "1";
-    }
-    else if(n % 100 == 0 ){
-        cout << n/100;
-    }
-    else{
-        cout << n/100 +1;
-    }
+    cin >> a >> b;
 
-	
-    
+    // 37 per hundert 
+
+    ans = (b /100 ) *a;
+
+    cout << ans; 
+
+
+
+
+
+
 }

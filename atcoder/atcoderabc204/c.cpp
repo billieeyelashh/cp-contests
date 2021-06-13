@@ -12,21 +12,19 @@ int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 
-    int n;
-    cin >> n;
+    //Tour
+    /*
+    N cities numbered 1 through N
+    M roads numbered 1 through M.
+    Road i leads from City Ai to City Bi(only works this way around can't go from bi to Ai)
 
-    if(n<= 0){
-        cout << "0";
-    }
-    else if(n<=100){
-        cout << "1";
-    }
-    else if(n % 100 == 0 ){
-        cout << n/100;
-    }
-    else{
-        cout << n/100 +1;
-    }
+    SOLVE:
+    pair them together how many permutations are there and then substract the pairs that are already in under there()
+    -> results in same if we would take the opposite road of a connection
+    */
+
+
+
 
 	
     

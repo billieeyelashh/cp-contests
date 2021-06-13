@@ -8,26 +8,23 @@ typedef long long ll;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 
+const int MAX_N=2000;
+
+vector<vector<int>>Graph; //Graph 
+bool temp[MAX_N]; // Max Cities
+
+void dfs(int v){ // vertex Scheitelpunkt // Decendant nachfahre // Back edges = gebogegene verbindungen
+    if(temp[v])return;
+    temp[v] =true;
+    for(auto vv:Graph[v])dfs(vv);
+    }
+
+
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
 
-    int n;
-    cin >> n;
-
-    if(n<= 0){
-        cout << "0";
-    }
-    else if(n<=100){
-        cout << "1";
-    }
-    else if(n % 100 == 0 ){
-        cout << n/100;
-    }
-    else{
-        cout << n/100 +1;
-    }
-
-	
+  
+    
     
 }

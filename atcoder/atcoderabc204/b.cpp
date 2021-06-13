@@ -17,7 +17,7 @@ int main() {
     int sum = 0 ;
 
 	//  if tree 10 <= don't take nuts
-    // if tree > 10 take nuts
+    // if tree > 10 take nuts -10
     
     for(int i =0; i <n; ++i){
         cin >> A[i];
