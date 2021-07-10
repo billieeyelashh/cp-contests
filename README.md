@@ -3,5 +3,5 @@ Csesfi codeforces atcoder etc. Never written writeups for solved Problems. Now I
 
 ##Credits
 
-https://github.com/bqi343/USACO
-https://github.com/E869120/Competitive-Programming
+- https://github.com/bqi343/USACO
+- https://github.com/E869120/Competitive-Programming
