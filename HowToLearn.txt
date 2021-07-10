@@ -1,10 +1,1 @@
-Errichto Video
-
-1. Solve problems slight above your rating range 
-2. If your stuck at one problem(20-30min) look at the editorial, first moment you encounter something new, go back to the problem and try to solve it with that method 
-3. When encountered a new Algo google for example (dfs problems ) and solve 2 or 3 more in this category. This way it will stick better 
-4. Try to solve like 3 main Problems a day 
-5. Read until the end of the editorial only if you need to do it 
-
-
 
