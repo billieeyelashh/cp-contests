@@ -10,13 +10,15 @@ typedef vector<int> vi;
 
 bool is_palindrome(string s){
     string t(s.rbegin(),s.rend());
-    return s == t;
+    return t ==s ;
 }
  
 int main(){
     string s;
     cin>>s;
-    int n=s.size();
+    int n;
+    n = sizeof(s);
+    
     if(is_palindrome(s) && is_palindrome(s.substr(0,(n-1)/2)) && is_palindrome(s.substr((n+1)/2))){
         cout<<"Yes"<<endl;
         cout << "First Substring: " << s.substr(0,(n-1)/2) << endl;
