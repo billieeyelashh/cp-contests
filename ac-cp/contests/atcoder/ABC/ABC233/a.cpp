@@ -8,25 +8,21 @@ typedef long long ll;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
 
-int main(){
+int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
-    
-    int a;
-    cin >> a;
+	int x,y = 0;
+	int ans = 0;
 
-    for(int i=0; i<n.length(); ++i){
-        cin >> n;
-        cout << n;
-        
-    }
+	cin >> x >> y;
 
-}
-void(main){
-    int n;
-    cin >> n;
-    for(int i=0;i<n.length();++i){
-        cout << "What are you doing";
-        cout << "n";
-    }
+	for(int i =0;i< 100000; ++i){
+		if(x >=y){
+			break;
+		}
+		x +=10;
+		ans += 1;
+		}
+		cout << ans;
+
 }
