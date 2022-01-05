@@ -5,3 +5,4 @@ Csesfi codeforces atcoder etc. Never written writeups for solved Problems. Now I
 
 - https://github.com/bqi343/USACO
 - https://github.com/E869120/Competitive-Programming
+- tourist and Benqi algo implementation 
