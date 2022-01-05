@@ -9,44 +9,47 @@ typedef pair<int, int> pii;
 typedef vector<int> vi;
 
 ll n,x;
+vector<vector<ll>>a;
 ll ans = 0;
-//Graph
-vector<vector<int>>g;
 
-void dfs(ll pos, ll kvi){
-    if(pos == n){
-        if(kvi ==x){
+void dfs(ll pos,ll kvi ){
+    if(pos=n){
+        if(x=kvi){
             ans++;
         }
         return;
-    }
-        for(ll c : g[pos]){
-            if(x/c > kvi){
-           continue;
-            }
-            dfs(pos+1, kvi*c);
-        }
-
-    
 }
+    for(ll c : a[pos]){
+        cout << "kvi" << kvi << endl;
+        if(x/c<kvi){
+            continue;  
+        }
+        dfs(pos+1,kvi*c);
+    
+    }
 
+}
 
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin.exceptions(cin.failbit);
     
-    cin >> n >> x;
-     
-    g.resize(n);
-    for(ll i = 0; i< n; ++i){
-        ll L; cin >> L;
-        g[i].resize(L);
-        for(ll j = 0; j < L - 1;j++){
-            cin >> g[i][j];
-    }
-    }
-    dfs(0,1);
+    //ll n,x;
+    //vector<vector<ll>>a;
 
+    // Read in Data
+    cin >> n >> x;
+    a.resize(n);
+    for (int i = 0 ; i < n ; i++) {
+        ll L; cin >> L;
+        a[i].resize(L);
+        for (int j = 0 ; j < L ; j++) {
+            cin >> a[i][j];
+        }
+    }
+    // Calculate
+
+    dfs(0,1);
     cout << ans << endl;
 
 }
