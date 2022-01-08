@@ -103,9 +103,9 @@ def save_samples(data, prob_dir):
         json.dump(data, f)
 
     for i, t in enumerate(data['tests'], start=1):
-        with open(prob_dir / f'sample{i}.in', 'w') as f:
+        with open(prob_dir / f'inp', 'w') as f:
             f.write(t['input'])
-        with open(prob_dir / f'sample{i}.out', 'w') as f:
+        with open(prob_dir / f'out', 'w') as f:
             f.write(t['output'])
 
 # Providing name = '.'
